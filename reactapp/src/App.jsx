@@ -7,17 +7,13 @@ import { Netflixcard } from "./components/Netflixcard";
 export const App = () => {
   return (
     // Fragment Start
-  <>   
-     {/* component calling */}
-    <Netflixcard />
-    <Netflixcard/>
-    <Netflixcard/>
-    <Netflixcard/>
-  </>
-  // Fragment End
+    <>
+      {/* component calling */}
+      <Netflixcard />
+    </>
+    // Fragment End
   );
-
-}
+};
 // component creating
 
-export default App
+export default App;
