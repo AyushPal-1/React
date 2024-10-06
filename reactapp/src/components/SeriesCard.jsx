@@ -1,15 +1,18 @@
 export const SeriesCard = (props) => {
+  console.log(props);
+  
+  const {id, img_url, name, rating, description, cast, genre, watch_url} = props.curElem;
     return (
-        <li>
+        <li key={props}>
           <div>
-            <img src={props.curElem.img_url} width="40%" height="40%" alt="" />
+            <img src={img_url} width="40%" height="40%" alt="" />
           </div>
-          <h2>Name: {props.curElem.name}</h2>
-          <h3>Rating: {props.curElem.rating}</h3>
-          <p>Summary: {props.curElem.description}</p>
-          <p>Genre: {props.curElem.genre}</p>
-          <p>Cast: {props.curElem.cast}</p>
-          <a href={props.curElem.watch_url} target="_blank">
+          <h2>Name: {name}</h2>
+          <h3>Rating: {rating}</h3>
+          <p>Summary: {description}</p>
+          <p>Genre: {genre}</p>
+          <p>Cast: {cast}</p>
+          <a href={watch_url} target="_blank">
             <button>Watch Now</button>
           </a>
           {/* Ternary Condition Using
