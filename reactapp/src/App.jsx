@@ -4,9 +4,10 @@
 // name import components using {}
 import { Netflixcard } from "./components/Netflixcard";
 import Profile from "./components/Profile";
-// import "./components/Netflix.css"
 import "./components/Netflix.module.css"
 import { EventHanding } from "./components/EventHanding";
+import { EventProps } from "./components/EventProps";
+
 export const App = () => {
   return (
     // Fragment Start
@@ -14,8 +15,10 @@ export const App = () => {
       {/* component calling */}
       <section className="container">
         <h1 className="card-heading">List of Best Netflix Series</h1>
-       <Netflixcard /> 
-      <EventHanding ></EventHanding>
+       {/* <Netflixcard />  */}
+      {/* <EventHanding ></EventHanding> */}
+      <EventProps></EventProps>
+
       </section>
       {/* <Profile /> */}
     </>

@@ -1,4 +1,3 @@
-
 export const EventHanding = () => {
     function handleButtonClick(){
         alert("alert")
