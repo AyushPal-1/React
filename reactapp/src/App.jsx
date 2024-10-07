@@ -6,7 +6,7 @@ import { Netflixcard } from "./components/Netflixcard";
 import Profile from "./components/Profile";
 // import "./components/Netflix.css"
 import "./components/Netflix.module.css"
-
+import { EventHanding } from "./components/EventHanding";
 export const App = () => {
   return (
     // Fragment Start
@@ -14,7 +14,8 @@ export const App = () => {
       {/* component calling */}
       <section className="container">
         <h1 className="card-heading">List of Best Netflix Series</h1>
-      <Netflixcard />
+       <Netflixcard /> 
+      <EventHanding ></EventHanding>
       </section>
       {/* <Profile /> */}
     </>
