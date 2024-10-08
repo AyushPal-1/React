@@ -8,6 +8,7 @@ import "./components/Netflix.module.css"
 import { EventHanding } from "./components/EventHanding";
 import { EventProps } from "./components/EventProps";
 import { EventPropagation } from "./components/EventPropagation";
+import { State } from "./components/hooks/State";
 
 export const App = () => {
   return (
@@ -15,11 +16,12 @@ export const App = () => {
     <>
       {/* component calling */}
       <section className="container">
-        <h1 className="card-heading">List of Best Netflix Series</h1>
+        {/* <h1 className="card-heading">List of Best Netflix Series</h1> */}
        {/* <Netflixcard />  */}
       {/* <EventHanding ></EventHanding> */}
       {/* <EventProps></EventProps> */}
-      <EventPropagation/>
+      {/* <EventPropagation/> */}
+      <State></State>
 
       </section>
       {/* <Profile /> */}
