@@ -9,6 +9,7 @@ import { EventHanding } from "./components/EventHanding";
 import { EventProps } from "./components/EventProps";
 import { EventPropagation } from "./components/EventPropagation";
 import { State } from "./components/hooks/State";
+import { ToggleSwitch } from "./components/projects/Toggle Switch/ToggleSwitch";
 
 export const App = () => {
   return (
@@ -21,8 +22,8 @@ export const App = () => {
       {/* <EventHanding ></EventHanding> */}
       {/* <EventProps></EventProps> */}
       {/* <EventPropagation/> */}
-      <State></State>
-
+      {/* <State></State> */}
+      <ToggleSwitch></ToggleSwitch>
       </section>
       {/* <Profile /> */}
     </>
