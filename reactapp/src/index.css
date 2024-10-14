@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
@@ -15,7 +15,7 @@ html {
   --supporting-color: #ebf3fe;
   --font-color: #424242;
   /* --bg-color: #ffffff; */
-  --bg-color: #f7fcff;
+  /* --bg-color: #f7fcff;
   --heading-color: #000a19;
   --hero-heading-color: #003b99;
   --white-color: #ffffff;
@@ -53,4 +53,4 @@ p,li,a,label{
 }
 .grid-three--cols{
   grid-template-columns: repeat(3, 1fr);
-}
+}  */
