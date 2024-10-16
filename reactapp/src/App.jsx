@@ -10,15 +10,16 @@
 // import { EventPropagation } from "./components/EventPropagation";
 // import { State } from "./hooks/State";
 // import { ToggleSwitch } from "./projects/Toggle Switch/ToggleSwitch";
-import { Todo } from "./projects/Todo/Todo";
+import { CounterChallenge } from "./hooks/useState/CounterApp";
+import { RegistrationForm } from "./hooks/useState/Registration";
+// import { Todo } from "./projects/Todo/Todo";
 
 export const App = () => {
   return (
     <section>
-      <Todo />
+      {/* <Todo /> */}
+      <RegistrationForm />
     </section>
   );
 };
-// component creating
-
 export default App;

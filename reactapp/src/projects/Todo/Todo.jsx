@@ -4,11 +4,6 @@ import { TodoForm } from "./TodoForm";
 import {TodoList} from "./TodoList"
 import { TodoDate } from "./TodoDate";
 
-import {
-  getLocalStorageTodoData,
-  setLocalStorageTodoData,
-} from "./TodoLocalStorage";
-
 
 export const Todo = () => {
   const [task, setTask] = useState([])
