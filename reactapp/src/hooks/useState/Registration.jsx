@@ -2,11 +2,15 @@ import "./index.css";
 import { useState } from "react";
 
 export const RegistrationForm = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: ""
+  });
+
+  
+  
   const handleInputChange = (e) => {
     const {name, value} = e.target
     switch(name){
