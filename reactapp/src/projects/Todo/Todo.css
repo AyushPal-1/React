@@ -88,13 +88,16 @@
   }
   
   form button {
-    padding: 17.5px;
-    font-size: 17px;
+    padding: 16px;
+    font-size: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     min-width: 100px;
     background-color: #5dade2;
     color: var(--secondary-color);
+    margin-top: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
   
   span {

@@ -1,9 +1,10 @@
-import { ContactForm } from "./hooks/useState/ContactForm";
+import { HowtoFetchAPI } from "./hooks/useEffect/HowtoFetchAPI";
+
 
 export const App = () => {
   return (
     <section>
-      <ContactForm />    
+      <HowtoFetchAPI/>
     </section>
   );
 };

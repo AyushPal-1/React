@@ -6,38 +6,20 @@ export const RegistrationForm = () => {
     firstName: "",
     lastName: "",
     email: "",
-    password: ""
+    password: "",
+    phoneNumber: "",
   });
 
-  
-  
   const handleInputChange = (e) => {
-    const {name, value} = e.target
-    switch(name){
-      case "firstName": setFirstName(value)
-      break
-      case "lastName": setLastName(value)
-      break
-      case "email": setEmail(value)
-      break
-      case "password": setPassword(value)
-      break
-      case "phone": setPhoneNumber(value)
-      break
-    }   
-  }
+    const { name, value } = e.target;
+    setUser((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleFormSubmit = (event) => {
-    event.preventDefault()
-    const formData = {
-      firstName,
-      lastName,
-      email,
-      password,
-      phoneNumber
-    }
-    console.log(formData);
-    
-  }
+    event.preventDefault();
+    console.log(user);
+  };
+
   return (
     <>
       <form onSubmit={handleFormSubmit}>
@@ -53,7 +35,7 @@ export const RegistrationForm = () => {
             name="firstName"
             placeholder="Enter firstName"
             required
-            value={firstName}
+            value={user.firstName}
             onChange={handleInputChange}
           />
 
@@ -65,15 +47,21 @@ export const RegistrationForm = () => {
             name="lastName"
             placeholder="Enter lastName"
             required
-            value={lastName}
+            value={user.lastName}
             onChange={handleInputChange}
           />
 
           <label htmlFor="email">
             <b>Email</b>
           </label>
-          <input type="text" placeholder="Enter Email" name="email" required value={email}
-          onChange={handleInputChange}/>
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            required
+            value={user.email}
+            onChange={handleInputChange}
+          />
 
           <label htmlFor="password">
             <b>Password</b>
@@ -83,7 +71,7 @@ export const RegistrationForm = () => {
             placeholder="Enter Password"
             name="password"
             required
-            value={password}
+            value={user.password}
             onChange={handleInputChange}
           />
 
@@ -91,8 +79,14 @@ export const RegistrationForm = () => {
             <b>Phone Number</b>
           </label>
 
-          <input type="phone" name="phone" placeholder="9876543211" required value={phoneNumber}
-          onChange={handleInputChange}/>
+          <input
+            type="phone"
+            name="phoneNumber"
+            placeholder="9876543211"
+            required
+            value={user.phoneNumber}
+            onChange={handleInputChange}
+          />
 
           <p>
             By creating an account you agree to our
@@ -116,10 +110,10 @@ export const RegistrationForm = () => {
         <p>
           Hello, my name is
           <span>
-            {firstName} {lastName}
+            {user.firstName} {user.lastName}
           </span>
-          . My email address is <span>{email}</span> and my phone number is
-          <span>{phoneNumber}</span>.
+          . My email address is <span>{user.email}</span> and my phone number is
+          <span>{user.phoneNumber}</span>.
         </p>
       </section>
     </>
