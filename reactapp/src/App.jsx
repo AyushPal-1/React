@@ -1,10 +1,13 @@
-import { HowtoFetchAPI } from "./hooks/useEffect/HowtoFetchAPI";
+import { BioProvider } from "./hooks/ContextAPI";
+import { Home } from "./hooks/ContextAPI/Home";
 
 
 export const App = () => {
   return (
     <section>
-      <HowtoFetchAPI/>
+      <BioProvider>
+        <Home></Home>
+      </BioProvider>
     </section>
   );
 };
