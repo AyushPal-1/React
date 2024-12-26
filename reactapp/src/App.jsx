@@ -1,13 +1,13 @@
-import { BioProvider } from "./hooks/ContextAPI";
-import { Home } from "./hooks/ContextAPI/Home";
+
+import { DarkLight, ThemeProvider } from "./hooks/ContextAPI/DarkLight";
 
 
 export const App = () => {
   return (
     <section>
-      <BioProvider>
-        <Home></Home>
-      </BioProvider>
+     <ThemeProvider>
+      <DarkLight></DarkLight>
+     </ThemeProvider>
     </section>
   );
 };
